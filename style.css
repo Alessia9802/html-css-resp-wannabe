@@ -1,0 +1,146 @@
+.row {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+/* BLOCCO LEZIONI */
+#lezioni .row > .left,
+#lezioni .row > .right {
+  width: 50%;
+  float: left;
+}
+
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    background-color: #f2f2cd;
+    width: 100%;
+  }
+
+  #lezioni .right > img,
+  #lezioni .left > img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .left,
+  .right {
+    display: block;
+    clear: both;
+    width: 100%;
+  }
+}
+
+/* BLOCCO STEPS */
+#steps .row > .left,
+#steps .row > .central,
+#steps .row > .right {
+  float: left;
+  width: 33%;
+}
+
+#steps {
+  text-align: center;
+}
+
+@media screen and (max-width: 420px) {
+  #steps .row {
+    background-color: #ffffff;
+    width: 100%;
+  }
+
+  .row {
+    width: 100%;
+  }
+
+  .left,
+  .central,
+  .right {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  #steps .right > img,
+  #steps .central > img,
+  #steps .left > img {
+    width: 60%;
+    height: 60%;
+  }
+
+  .left,
+  .central,
+  .right {
+    display: block;
+    clear: both;
+  }
+}
+
+/* BLOCCO PERCHE */
+#why {
+  text-align: center;
+}
+
+#why .row > .first,
+#why .row > .second,
+#why .row > .third {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#why .row img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+@media screen and (max-width: 420px) {
+  #why .row {
+    background-color: #f2f2cd;
+    width: 100%;
+  }
+
+  .first,
+  .second,
+  .third {
+    display: block;
+    clear: both;
+  }
+
+  #why .first > img,
+  #why .second > img,
+  #why .third > img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* COMMON */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container.grey {
+  background-color: #f9f9f9;
+}
+
+img {
+  height: 200px;
+}
+
+.clear {
+  clear: both;
+}
