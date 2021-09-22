@@ -89,7 +89,7 @@ img {
     padding-top: 1rem;
   }
 
-  #lezioni .row > .left, #lezioni .row > .right {
+  #lezioni.container > .row > .left, #lezioni.container > .row > .right {
     display: block;
     clear: both;
     width: 100%;
