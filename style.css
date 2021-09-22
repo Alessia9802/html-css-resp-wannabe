@@ -23,31 +23,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 420px) {
-  .container {
-    background-color: #f2f2cd;
-    width: 420px;
-  }
 
-  #lezioni .left > img {
-    width: 25%;
-    height: 25%;
-    padding-top: 1rem;
-  }
-
-  #lezioni .right > img {
-    width: 25%;
-    height: 25%;
-    padding-top: 1rem;
-  }
-
-  .left,
-  .right {
-    display: block;
-    clear: both;
-    width: 420px;
-  }
-}
 
 /* BLOCCO STEPS */
 #steps .row > .left,
@@ -61,35 +37,6 @@
   text-align: center;
 }
 
-@media screen and (max-width: 420px) {
-  #steps .row {
-    background-color: #ffffff;
-    width: 420px;
-  }
-
-  .left,
-  .central,
-  .right {
-    /* padding-left: 120px;
-    padding-right: 120px; */
-  }
-
-  #steps .right > img,
-  #steps .central > img,
-  #steps .left > img {
-    width: 20%;
-    height: 20%;
-    padding-top: 1rem;
-  }
-
-  .left,
-  .central,
-  .right {
-    display: block;
-    clear: both;
-    width: 420px;
-  }
-}
 
 /* BLOCCO PERCHE */
 #why {
@@ -107,27 +54,6 @@
   background-color: #428bca;
   border-radius: 50%;
   padding: 30px;
-}
-
-@media screen and (max-width: 420px) {
-  #why .row {
-    background-color: #f2f2cd;
-    width: 420px;
-  }
-
-  .first,
-  .second,
-  .third {
-    display: block;
-    clear: both;
-  }
-
-  #why .first > img,
-  #why .second > img,
-  #why .third > img {
-    width: 10%;
-    height: 10%;
-  }
 }
 
 /* COMMON */
@@ -148,3 +74,67 @@ img {
 .clear {
   clear: both;
 }
+
+/* Media Query */
+
+@media screen and (max-width: 420px) {
+  #lezioni .container {
+    background-color: #f2f2cd;
+    width: 100%;
+  }
+
+  #lezioni .left > img, #lezioni .right > img {
+    width: 25%;
+    height: 25%;
+    padding-top: 1rem;
+  }
+
+  #lezioni .left, #lezioni .right {
+    display: block;
+    clear: both;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #steps .row {
+    background-color: #ffffff;
+    width: 420px;
+  }
+
+  #steps .right > img,
+  #steps .central > img,
+  #steps .left > img {
+    width: 20%;
+    height: 20%;
+    padding-top: 1rem;
+  }
+
+  .left,
+  .central,
+  .right {
+    display: block;
+    clear: both;
+    width: 420px;
+  }
+
+  @media screen and (max-width: 420px) {
+  #why .row {
+    background-color: #f2f2cd;
+    width: 420px;
+  }
+
+  .first,
+  .second,
+  .third {
+    display: block;
+    clear: both;
+  }
+
+  #why .first > img,
+  #why .second > img,
+  #why .third > img {
+    width: 10%;
+    height: 10%;
+   }
+ }  
